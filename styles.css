@@ -1,0 +1,229 @@
+/* Reset một số kiểu mặc định của trình duyệt */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Kiểu cơ bản cho body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 1rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+header nav ul li a:hover {
+    background: #555;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://www.azonnal.net/wp-content/uploads/2021/04/blog-cong-nghe.png') no-repeat center center/cover;
+    color: #fff;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero p {
+    font-size: 1.25rem;
+}
+
+/* About Section */
+.about {
+    padding: 2rem 0;
+    background: #fff;
+}
+
+.about p {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Topics Section */
+.topics {
+    padding: 2rem 0;
+    background: #fff;
+}
+
+.topics h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.topic {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.topic a {
+    text-decoration: none;
+    color: #007BFF;
+    font-size: 1.25rem;
+}
+
+.topic a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+main {
+    padding: 2rem 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.post {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+.post img {
+    width: 100%;        /* Chiếm 100% chiều rộng của phần tử cha */
+    max-width: 500px;   /* Giới hạn chiều rộng tối đa */
+    height: auto;       /* Giữ tỷ lệ khung hình */
+    object-fit: cover;  /* Cắt ảnh để vừa với khung */
+    border-radius: 8px; /* Bo góc ảnh */
+    display: block;     /* Đảm bảo ảnh không bị lệch */
+    margin: 0 auto;
+}
+
+
+
+.post h3 {
+    margin: 1rem 1rem 0.5rem;
+}
+
+.post p.short-desc {
+    margin: 0 1rem 1rem;
+}
+
+.post button {
+    display: block;
+    margin: 0 1rem 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.post button:hover {
+    background-color: #0056b3;
+}
+
+.post-detail {
+    display: none;
+    padding: 1rem;
+    border-top: 1px solid #eee;
+}
+
+.post-detail p {
+    margin: 0;
+}
+
+/* Contact Section */
+.contact {
+    padding: 2rem 0;
+    background: #f4f4f4;
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.contact p {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+}
+
+.contact label {
+    display: block;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.contact button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

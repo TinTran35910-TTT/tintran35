@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Công Nghệ</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 90%;
+            margin: auto;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        nav ul {
+            padding: 0;
+            list-style: none;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        section {
+            padding: 40px 0;
+        }
+        .hero {
+            background-image: url('images/AdobeStock_559145847.jpeg');
+            background-size: cover;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        .hero h2 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.2em;
+        }
+        .post {
+            display: flex;
+            background-color: #fff;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .post img {
+            width: 40%;
+            border-radius: 10px 0 0 10px;
+        }
+        .post-content {
+            padding: 20px;
+            flex: 1;
+        }
+        .post h3 {
+            font-size: 1.8em;
+            color: #333;
+        }
+        .post p {
+            font-size: 1em;
+            color: #666;
+        }
+        .post button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        .post-detail {
+            display: none;
+            margin-top: 20px;
+            font-size: 1em;
+            color: #555;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Blog Công Nghệ</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Trang Chủ</a></li>
+                    <li><a href="#about">Về Chúng Tôi</a></li>
+                    <li><a href="#topics">Chủ Đề</a></li>
+                    <li><a href="#posts">Bài Đăng</a></li>
+                    <li><a href="#contact">Liên Hệ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Khám Phá Thế Giới Công Nghệ</h2>
+            <p>Chúng tôi mang đến cho bạn những bài viết chuyên sâu về công nghệ, xu hướng lập trình và những giải pháp sáng tạo.</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Về Chúng Tôi</h2>
+            <p>Chúng tôi là một nhóm các kỹ sư và nhà phát triển đam mê công nghệ, luôn tìm kiếm những giải pháp sáng tạo để giải quyết các vấn đề trong ngành công nghiệp công nghệ thông tin. Mục tiêu của chúng tôi là chia sẻ kiến thức, sáng tạo và truyền cảm hứng đến cộng đồng công nghệ.</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+        <section id="posts">
+            <div class="container">
+                <h2>Bài Đăng Mới Nhất</h2>
+                <!-- Post 1 -->
+                <div class="post">
+                    <img src="images/AdobeStock_559145847.jpeg" alt="AI và Machine Learning">
+                    <div class="post-content">
+                        <h3>Tương Lai Của Trí Tuệ Nhân Tạo Và Học Máy</h3>
+                        <p class="short-desc">Tác giả: Trần Thanh Tín</p>
+                        <button onclick="toggleDetail('detail-ai')">Xem Thêm</button>
+                        <div class="post-detail" id="detail-ai">
+                            <p>AI đang ngày càng trở thành một phần không thể thiếu trong cuộc sống. Từ việc tự động hóa các quy trình công nghiệp đến việc phát triển các sản phẩm thông minh, AI và Học Máy đang mở ra những cơ hội vô tận. Bài viết này sẽ khám phá cách AI và Học Máy có thể thay đổi thế giới trong tương lai gần.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Post 2 -->
+                <div class="post">
+                    <img src="images/download.jpg" alt="Lập Trình Python">
+                    <div class="post-content">
+                        <h3>Python - Ngôn Ngữ Lập Trình Đơn Giản Và Mạnh Mẽ</h3>
+                        <p class="short-desc">Tác giả: Ngô Viết Huy Hoàng</p>
+                        <button onclick="toggleDetail('detail-python')">Xem Thêm</button>
+                        <div class="post-detail" id="detail-python">
+                            <p>Python là một ngôn ngữ lập trình mạnh mẽ với cú pháp đơn giản, dễ hiểu. Python có thể được sử dụng trong nhiều lĩnh vực, từ phát triển web đến phân tích dữ liệu và trí tuệ nhân tạo. Trong bài viết này, chúng tôi sẽ giới thiệu về những ưu điểm của Python và cách bạn có thể bắt đầu học lập trình với ngôn ngữ này.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Post 3 -->
+                <div class="post">
+                    <img src="images/embedded-systems.jpg" alt="Lập Trình Nhúng">
+                    <div class="post-content">
+                        <h3>Lập Trình Nhúng: Tạo Ra Các Thiết Bị Thông Minh</h3>
+                        <p class="short-desc">Tác giả: Lương Song Dân</p>
+                        <button onclick="toggleDetail('detail-webdev')">Xem Thêm</button>
+                        <div class="post-detail" id="detail-webdev">
+                            <p>Lập trình nhúng là việc phát triển phần mềm cho các thiết bị điện tử thông minh như điện thoại, máy tính bảng, và các sản phẩm IoT. Với sự phát triển mạnh mẽ của công nghệ, lập trình nhúng ngày càng trở nên quan trọng trong việc tạo ra các thiết bị thông minh, tối ưu và tiết kiệm năng lượng.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Liên Hệ Với Chúng Tôi</h2>
+            <p>Chúng tôi luôn sẵn sàng lắng nghe phản hồi từ bạn. Hãy gửi cho chúng tôi những câu hỏi hoặc ý kiến của bạn về các bài viết, hoặc bất kỳ thắc mắc nào liên quan đến công nghệ.</p>
+            <form action="#" method="post">
+                <label for="name">Tên:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Lời Nhắn:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <button type="submit">Gửi Lời Nhắn</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Blog Công Nghệ. Tất cả quyền lợi được bảo lưu.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleDetail(id) {
+            var element = document.getElementById(id);
+            if (element.style.display === "none" || element.style.display === "") {
+                element.style.display = "block";
+            } else {
+                element.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
